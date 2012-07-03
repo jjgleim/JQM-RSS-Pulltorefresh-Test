@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.evsc.erevolution"
-    version   = "1.0.15">
+    id        = "com.evsc.erevjqmptrf"
+    version   = "1.0.0">
 
-<name>EVSC eRevolution</name>
+<name>EVSC eRev RSS Pulltorefresh</name>
 
 <description>
-The official app for the 2012 EVSC eRevolution Regional eLearning Conference!
+Trying to get my app news feed to have pull to refresh.
 </description>
 
 <author href="http://www.evscicats.com" email="jerrad.gleim@evsc.k12.in.us">
