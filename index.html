@@ -44,6 +44,48 @@ $.mobile.pageLoadErrorMessage = "There was a problem loading the page. Please tr
     }
    
 </script>
+<script src="jquery.mobile.pulltorefresh.js" type="text/javascript"></script>
+  <script>
+  $(function() {
+    var refreshCallback = function(loader) {
+      setTimeout(function(){
+        //loader.finish();
+
+      }, 1000);
+    };
+
+    var cancelRefreshing = function() {
+    };
+
+    $("#status").pulltorefresh({
+      async: true,
+      // event triggered when refreshing start
+      refresh: function(event, finishCallback) {
+        element = $(this)
+        setTimeout(function(){
+          alert("refresh");
+
+          // you must call this function if refreshing process runs asynchronusly
+          finishCallback();
+        }, 1000);
+      },
+      abort: function() {
+        alert("abort");
+      }
+    });
+  });
+  </script>
+  <style>
+    .ui-header {
+      z-index: 10;
+    }
+
+    .pull-header {
+      height: 80px;
+      margin-top: -80px;
+      background-color: #88FFFF;
+    }
+  </style>
 </head> 
 <body onload="onBodyLoad();"> 
 
